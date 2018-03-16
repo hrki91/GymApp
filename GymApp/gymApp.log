@@ -1,0 +1,79 @@
+16-03-2018 16:06:33 INFO  Main:43 - Pocetak rada
+16-03-2018 16:06:33 INFO  GymProperties:24 - Loading properties
+16-03-2018 16:06:33 INFO  GymProperties:31 - Properties loaded
+16-03-2018 16:06:39 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+16-03-2018 16:06:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+16-03-2018 16:06:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:06:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16-03-2018 16:06:39 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:06:40 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:06:41 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16-03-2018 16:06:41 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16-03-2018 16:06:41 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+16-03-2018 16:06:41 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+16-03-2018 16:06:41 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+16-03-2018 16:06:41 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+16-03-2018 16:06:41 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+16-03-2018 16:06:42 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b5121bc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+16-03-2018 16:06:43 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+16-03-2018 16:07:31 INFO  Main:43 - Pocetak rada
+16-03-2018 16:07:31 INFO  GymProperties:24 - Loading properties
+16-03-2018 16:07:31 INFO  GymProperties:31 - Properties loaded
+16-03-2018 16:07:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+16-03-2018 16:07:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+16-03-2018 16:07:40 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:07:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16-03-2018 16:07:40 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:07:42 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:07:42 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16-03-2018 16:07:42 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16-03-2018 16:07:42 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+16-03-2018 16:07:42 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+16-03-2018 16:07:42 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+16-03-2018 16:07:42 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+16-03-2018 16:07:43 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+16-03-2018 16:07:44 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7b2284ac] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+16-03-2018 16:07:44 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+16-03-2018 16:07:46 INFO  MainMenuController:23 - Closing MainMenu Form
+16-03-2018 16:07:48 INFO  LoginController:98 - Gašenje aplikacije
+16-03-2018 16:13:10 INFO  Main:42 - Pocetak rada
+16-03-2018 16:13:10 INFO  GymProperties:24 - Loading properties
+16-03-2018 16:13:10 INFO  GymProperties:31 - Properties loaded
+16-03-2018 16:13:17 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+16-03-2018 16:13:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+16-03-2018 16:13:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:13:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16-03-2018 16:13:17 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:13:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:13:19 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16-03-2018 16:13:19 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16-03-2018 16:13:19 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+16-03-2018 16:13:19 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+16-03-2018 16:13:19 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+16-03-2018 16:13:19 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+16-03-2018 16:13:20 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+16-03-2018 16:13:21 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c70ab41] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+16-03-2018 16:13:21 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+16-03-2018 16:13:24 INFO  MainMenuController:23 - Closing MainMenu Form
+16-03-2018 16:13:28 INFO  MainMenuController:23 - Closing MainMenu Form
+16-03-2018 16:13:29 INFO  LoginController:98 - Gašenje aplikacije
+16-03-2018 16:14:13 INFO  Main:42 - Pocetak rada
+16-03-2018 16:14:13 INFO  GymProperties:24 - Loading properties
+16-03-2018 16:14:13 INFO  GymProperties:31 - Properties loaded
+16-03-2018 16:14:19 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+16-03-2018 16:14:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+16-03-2018 16:14:19 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:14:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+16-03-2018 16:14:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:14:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+16-03-2018 16:14:21 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+16-03-2018 16:14:21 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+16-03-2018 16:14:21 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+16-03-2018 16:14:21 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+16-03-2018 16:14:21 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+16-03-2018 16:14:21 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+16-03-2018 16:14:21 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+16-03-2018 16:14:22 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@79840664] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+16-03-2018 16:14:23 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+16-03-2018 16:14:24 INFO  MainMenuController:23 - Closing MainMenu Form
+16-03-2018 16:14:27 INFO  LoginController:98 - Gašenje aplikacije

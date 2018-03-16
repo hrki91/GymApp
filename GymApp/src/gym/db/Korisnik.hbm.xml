@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+
+	<class name="gym.db.Korisnik" table="Korisnik">		
+		<id name="id" column="id">
+        	<generator class="native"/>
+        </id>				
+		<property name="ime"/>
+		<many-to-one name="tip_korisnika" column="tip_korisnika" lazy="false" />	
+		<property name="kor_ime"/>
+		<property name="zaporka"/>	
+		<property name="aktivan"/>				
+	</class>
+
+</hibernate-mapping>

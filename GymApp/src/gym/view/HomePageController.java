@@ -1,7 +1,12 @@
 package gym.view;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
+import gym.db.Clan;
+import gym.db.DbOperation;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -48,8 +53,27 @@ public HomePageController(){
 	
 	
 	
+	@SuppressWarnings("unchecked")
 	private void getMembers(){
-//		log.info("GETTING MEMBERS WHO CAN TRAIN TODAY ");
+		log.debug("GETTING MEMBERS WHO CAN TRAIN TODAY ");
+		/*
+		 * HashMap<String, String[]> tmp = new HashMap<>();
+			String restriction = "eq;"+korisnicko_ime.getText();
+			tmp.put("kor_ime",restriction.split(";"));
+			@SuppressWarnings("unchecked")
+			List<Korisnik> korisnik =DbOperation.Instance().getValue(tmp,Korisnik.class);
+		 * 
+		 * */
+		HashMap<String, String[]> tmp = new HashMap<>();
+		//String restriction = "eq;"+korisnicko_ime.getText();
+		List<Clan> clan = DbOperation.Instance().getValue(tmp, Clan.class);
+		if (!clan.isEmpty()) {
+			for (Clan clan2 : clan) {
+				membersList.add(clan2.getId()+". "+clan2.getIme()+" "+clan2.getPrezime());
+			}
+		}
+		else
+			log.debug("No members for today trening");
 //		
 //		ArrayList<String> temp = new ArrayList<String>();		
 //		temp=sq.executeQuerry("MembersWhoCanTrain", "id,Name,Last_Name");

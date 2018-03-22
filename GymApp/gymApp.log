@@ -1,79 +1,343 @@
-16-03-2018 16:06:33 INFO  Main:43 - Pocetak rada
-16-03-2018 16:06:33 INFO  GymProperties:24 - Loading properties
-16-03-2018 16:06:33 INFO  GymProperties:31 - Properties loaded
-16-03-2018 16:06:39 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-16-03-2018 16:06:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
-16-03-2018 16:06:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:06:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-16-03-2018 16:06:39 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:06:40 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:06:41 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-16-03-2018 16:06:41 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-16-03-2018 16:06:41 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-16-03-2018 16:06:41 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-16-03-2018 16:06:41 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-16-03-2018 16:06:41 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-16-03-2018 16:06:41 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-16-03-2018 16:06:42 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b5121bc] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-16-03-2018 16:06:43 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-16-03-2018 16:07:31 INFO  Main:43 - Pocetak rada
-16-03-2018 16:07:31 INFO  GymProperties:24 - Loading properties
-16-03-2018 16:07:31 INFO  GymProperties:31 - Properties loaded
-16-03-2018 16:07:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-16-03-2018 16:07:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
-16-03-2018 16:07:40 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:07:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-16-03-2018 16:07:40 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:07:42 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:07:42 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-16-03-2018 16:07:42 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-16-03-2018 16:07:42 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-16-03-2018 16:07:42 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-16-03-2018 16:07:42 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-16-03-2018 16:07:42 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-16-03-2018 16:07:43 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-16-03-2018 16:07:44 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7b2284ac] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-16-03-2018 16:07:44 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-16-03-2018 16:07:46 INFO  MainMenuController:23 - Closing MainMenu Form
-16-03-2018 16:07:48 INFO  LoginController:98 - Gašenje aplikacije
-16-03-2018 16:13:10 INFO  Main:42 - Pocetak rada
-16-03-2018 16:13:10 INFO  GymProperties:24 - Loading properties
-16-03-2018 16:13:10 INFO  GymProperties:31 - Properties loaded
-16-03-2018 16:13:17 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-16-03-2018 16:13:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
-16-03-2018 16:13:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:13:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-16-03-2018 16:13:17 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:13:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:13:19 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-16-03-2018 16:13:19 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-16-03-2018 16:13:19 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-16-03-2018 16:13:19 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-16-03-2018 16:13:19 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-16-03-2018 16:13:19 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-16-03-2018 16:13:20 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-16-03-2018 16:13:21 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4c70ab41] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-16-03-2018 16:13:21 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-16-03-2018 16:13:24 INFO  MainMenuController:23 - Closing MainMenu Form
-16-03-2018 16:13:28 INFO  MainMenuController:23 - Closing MainMenu Form
-16-03-2018 16:13:29 INFO  LoginController:98 - Gašenje aplikacije
-16-03-2018 16:14:13 INFO  Main:42 - Pocetak rada
-16-03-2018 16:14:13 INFO  GymProperties:24 - Loading properties
-16-03-2018 16:14:13 INFO  GymProperties:31 - Properties loaded
-16-03-2018 16:14:19 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-16-03-2018 16:14:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
-16-03-2018 16:14:19 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:14:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-16-03-2018 16:14:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:14:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-16-03-2018 16:14:21 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-16-03-2018 16:14:21 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-16-03-2018 16:14:21 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-16-03-2018 16:14:21 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-16-03-2018 16:14:21 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-16-03-2018 16:14:21 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-16-03-2018 16:14:21 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-16-03-2018 16:14:22 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@79840664] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-16-03-2018 16:14:23 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-16-03-2018 16:14:24 INFO  MainMenuController:23 - Closing MainMenu Form
-16-03-2018 16:14:27 INFO  LoginController:98 - Gašenje aplikacije
+22-03-2018 15:31:55 INFO  Main:44 - Pocetak rada
+22-03-2018 15:31:55 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:31:55 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:31:55 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:31:55 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:31:55 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:31:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:31:56 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:31:57 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:31:58 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:31:58 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:31:58 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:31:58 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:31:58 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:31:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:32:00 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e0aadd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+22-03-2018 15:32:06 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:32:06 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:32:06 INFO  DefaultLoadEventListener:129 - HHH000327: Error performing load command : org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of gym.db.Clanarina.br_treniga_u_tjednu
+22-03-2018 15:32:06 ERROR Main:104 - 
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at gym.Main.setScreen(Main.java:93)
+	at gym.view.LoginController.login(LoginController.java:96)
+	at gym.view.LoginController.keyPress(LoginController.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$KeyHandler.process(Scene.java:3964)
+	at javafx.scene.Scene$KeyHandler.access$1800(Scene.java:3910)
+	at javafx.scene.Scene.impl_processKeyEvent(Scene.java:2040)
+	at javafx.scene.Scene$ScenePeerListener.keyEvent(Scene.java:2501)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:217)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:149)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleKeyEvent$352(GlassViewEventHandler.java:248)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleKeyEvent(GlassViewEventHandler.java:247)
+	at com.sun.glass.ui.View.handleKeyEvent(View.java:546)
+	at com.sun.glass.ui.View.notifyKey(View.java:966)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at gym.view.HomePageController.getMembers(HomePageController.java:70)
+	at gym.view.HomePageController.initController(HomePageController.java:33)
+	... 46 more
+22-03-2018 15:34:51 INFO  Main:44 - Pocetak rada
+22-03-2018 15:34:51 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:34:51 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:34:51 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:34:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:34:51 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:34:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:34:51 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:34:53 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:34:53 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:34:53 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:34:53 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:34:53 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:34:53 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:34:54 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:34:55 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e0aadd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+22-03-2018 15:35:00 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:35:00 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:35:00 INFO  DefaultLoadEventListener:129 - HHH000327: Error performing load command : org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of gym.db.Clanarina.br_treniga_u_tjednu
+22-03-2018 15:35:00 ERROR Main:104 - 
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at gym.Main.setScreen(Main.java:93)
+	at gym.view.LoginController.login(LoginController.java:96)
+	at gym.view.LoginController.keyPress(LoginController.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$KeyHandler.process(Scene.java:3964)
+	at javafx.scene.Scene$KeyHandler.access$1800(Scene.java:3910)
+	at javafx.scene.Scene.impl_processKeyEvent(Scene.java:2040)
+	at javafx.scene.Scene$ScenePeerListener.keyEvent(Scene.java:2501)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:217)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:149)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleKeyEvent$352(GlassViewEventHandler.java:248)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleKeyEvent(GlassViewEventHandler.java:247)
+	at com.sun.glass.ui.View.handleKeyEvent(View.java:546)
+	at com.sun.glass.ui.View.notifyKey(View.java:966)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at gym.view.HomePageController.getMembers(HomePageController.java:70)
+	at gym.view.HomePageController.initController(HomePageController.java:33)
+	... 46 more
+22-03-2018 15:35:35 INFO  Main:44 - Pocetak rada
+22-03-2018 15:35:35 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:35:35 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:35:35 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:35:35 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:35:35 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:35:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:35:36 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:35:38 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:35:38 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:35:38 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:35:38 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:35:38 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:35:38 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:35:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:35:41 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@52f57666] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+22-03-2018 15:35:48 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:36:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:36:07 INFO  DefaultLoadEventListener:129 - HHH000327: Error performing load command : org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of gym.db.Clanarina.br_treniga_u_tjednu
+22-03-2018 15:36:07 ERROR Main:104 - 
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at gym.Main.setScreen(Main.java:93)
+	at gym.view.LoginController.login(LoginController.java:96)
+	at gym.view.LoginController.keyPress(LoginController.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$KeyHandler.process(Scene.java:3964)
+	at javafx.scene.Scene$KeyHandler.access$1800(Scene.java:3910)
+	at javafx.scene.Scene.impl_processKeyEvent(Scene.java:2040)
+	at javafx.scene.Scene$ScenePeerListener.keyEvent(Scene.java:2501)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:217)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:149)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleKeyEvent$352(GlassViewEventHandler.java:248)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleKeyEvent(GlassViewEventHandler.java:247)
+	at com.sun.glass.ui.View.handleKeyEvent(View.java:546)
+	at com.sun.glass.ui.View.notifyKey(View.java:966)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at gym.view.HomePageController.getMembers(HomePageController.java:70)
+	at gym.view.HomePageController.initController(HomePageController.java:33)
+	... 46 more
+22-03-2018 15:36:25 INFO  Main:44 - Pocetak rada
+22-03-2018 15:36:25 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:36:25 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:36:26 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:36:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:36:26 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:36:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:36:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:36:28 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:36:28 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:36:28 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:36:28 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:36:28 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:36:28 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:36:29 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:36:31 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b887730] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+22-03-2018 15:36:37 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:36:37 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:37:35 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.PropertyAccessException: Exception occurred inside getter of gym.db.Clanarina.br_treniga_u_tjednu]
+22-03-2018 15:39:05 INFO  Main:44 - Pocetak rada
+22-03-2018 15:39:05 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:39:05 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:39:06 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:39:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:39:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:39:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:39:06 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:39:08 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:39:08 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:39:08 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:39:08 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:39:08 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:39:08 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:39:09 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:39:11 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b887730] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+22-03-2018 15:39:16 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:39:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:39:58 INFO  MainMenuController:30 - Closing MainMenu Form
+22-03-2018 15:39:59 INFO  LoginController:106 - Gašenje aplikacije
+22-03-2018 15:40:41 INFO  Main:44 - Pocetak rada
+22-03-2018 15:40:41 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:40:41 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:40:42 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:40:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:40:42 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:40:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:40:42 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:40:44 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:40:44 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:40:44 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:40:44 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:40:44 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:40:44 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:40:45 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:41:39 INFO  Main:44 - Pocetak rada
+22-03-2018 15:41:39 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:41:39 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:41:39 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:41:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:41:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:41:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:41:39 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:41:41 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:41:41 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:41:41 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:41:41 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:41:41 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:41:41 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:41:42 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:41:43 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:42:09 INFO  Main:44 - Pocetak rada
+22-03-2018 15:42:09 INFO  GymProperties:24 - Loading properties
+22-03-2018 15:42:09 INFO  GymProperties:31 - Properties loaded
+22-03-2018 15:42:09 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+22-03-2018 15:42:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
+22-03-2018 15:42:09 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:42:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+22-03-2018 15:42:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+22-03-2018 15:42:11 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+22-03-2018 15:42:11 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+22-03-2018 15:42:11 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+22-03-2018 15:42:11 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+22-03-2018 15:42:11 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+22-03-2018 15:42:11 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+22-03-2018 15:42:12 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+22-03-2018 15:42:13 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e0aadd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+22-03-2018 15:42:19 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:42:19 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+22-03-2018 15:42:24 INFO  MainMenuController:30 - Closing MainMenu Form
+22-03-2018 15:42:26 INFO  LoginController:106 - Gašenje aplikacije

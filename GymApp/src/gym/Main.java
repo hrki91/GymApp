@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
+import gym.db.DbOperation;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -29,7 +31,7 @@ public class Main extends Application {
 			primaryStage.setScene(scene);
 			primaryStage.show();
 
-			setScreen("view/Login.fxml", "gym.view.LoginController",true,"left");
+			setScreen("view/Login.fxml", "gym.view.LoginController",true,"center");
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -41,6 +43,7 @@ public class Main extends Application {
 		// INICIJALIZACIJA PROPERTY FILE-OVA, VRIJEDNOSTI SE DOBIVAJU IZ POZIVA JAVE
 		log.info("Pocetak rada");
 		new GymProperties().initProperties(args[0], args[1]);
+		DbOperation.Instance();
 		launch(args);
 	}
 
@@ -59,6 +62,7 @@ public class Main extends Application {
 	public void close() {
 		rootLayout.setLeft(null);
 		rootLayout.setCenter(null);
+		rootLayout.setRight(null);
 		setScreen("view/Login.fxml", "gym.view.LoginController",true,"center");
 	}
 

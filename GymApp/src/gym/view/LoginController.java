@@ -11,6 +11,7 @@ import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -62,7 +63,11 @@ public class LoginController {
 			error_label.setText(GymProperties.getMessage(GymProperties.ERRMESSAGE, "empty_field"));
 			log.info("Empty 'korisniko_ime' or 'zaporka' while trying login");
 		} else {
-			List<Korisnik> korisnik = new DbOperation().getValue(korisnicko_ime.getText());
+			HashMap<String, String[]> tmp = new HashMap<>();
+			String restriction = "eq;"+korisnicko_ime.getText();
+			tmp.put("kor_ime",restriction.split(";"));
+			@SuppressWarnings("unchecked")
+			List<Korisnik> korisnik =DbOperation.Instance().getValue(tmp,Korisnik.class);
 			if (korisnik.isEmpty()) {
 				error_label.setText(GymProperties.getMessage(GymProperties.ERRMESSAGE, "wrong_username"));
 				log.info("Wrong user name " + korisnicko_ime.getText());
@@ -87,8 +92,8 @@ public class LoginController {
 			}
 			for (Korisnik korisnik2 : korisnik) {
 				if (korisnik2.getZaporka().equals(hashZaporka)) {
-					mainApp.setScreen("view/MainMenu.fxml", "gym.view.MainMenuController", true,"center");
-					mainApp.setScreen("view/HomePage.fxml", "gym.view.HomePageController",false,"left");
+					mainApp.setScreen("view/MainMenu.fxml", "gym.view.MainMenuController", true,"right");
+					mainApp.setScreen("view/HomePage.fxml", "gym.view.HomePageController",false,"center");
 				}
 
 				else

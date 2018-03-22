@@ -22,7 +22,10 @@
 
     	<mapping resource="gym/db/Korisnik.hbm.xml"/>
     	<mapping resource="gym/db/Tip_korisnika.hbm.xml"/>
-
+    	<mapping resource="gym/db/Tip_treninga.hbm.xml"/>
+		<mapping resource="gym/db/Trening.hbm.xml"/>
+		<mapping resource="gym/db/Clanarina.hbm.xml"/>
+		<mapping resource="gym/db/Clan.hbm.xml"/>
         
   </session-factory>    
   

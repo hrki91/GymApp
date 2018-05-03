@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping>
+
+	<class name="gym.db.Glavni_meni" table="glavni_meni">
+		<id name="pozicija" column="pozicija" type="int">
+        </id>		
+		<property name="naslov" type="string"/>
+		<property name="opis" type="string"/>
+		<property name="controller" type="string"/>
+		<property name="fxml" type="string"/>	
+		<property name="aktivna" type="boolean"/>
+		<property name="korisnik" type="int"/>			
+	</class>
+
+</hibernate-mapping>

@@ -10,6 +10,8 @@
 }
 .menuButton {
   -fx-background-color:#eae7f3;
+  -fx-max-height: 60px;
+  -fx-pref-width: 180px;
 }
 .menuButton:hover {
   -fx-background-color:#120289;

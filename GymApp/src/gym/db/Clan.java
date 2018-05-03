@@ -3,7 +3,7 @@ package gym.db;
 import java.util.Date;
 
 public class Clan {
-	private int id;
+	private Integer id;
 	private String ime;
 	private String prezime;
 	private Date datum_rodenja;
@@ -17,10 +17,10 @@ public class Clan {
 	public void setIme(String ime) {
 		this.ime = ime;
 	}
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getPrezime() {

@@ -59,6 +59,13 @@ FOREIGN KEY (clanarina)
 FOREIGN KEY (trening)
         REFERENCES trening(id));
 
+create table clanarina_clana(
+id int primary key auto_increment,
+clan int,
+start_date date,
+end_date date,
+Foreign key (clan) references clan(id));
+		
 create table dolasci(
 id int primary key auto_increment,
 clan int,

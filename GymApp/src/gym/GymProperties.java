@@ -41,6 +41,6 @@ public class GymProperties {
 	}
 
 	public static String getMessage(String prefix,String key) {
-		return appProp.getProperty(prefix+"."+key);
+		return messages.getProperty(prefix+"."+key);
 	}
 }

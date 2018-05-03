@@ -11,6 +11,7 @@ import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -21,7 +22,7 @@ import gym.Main;
 import gym.db.DbOperation;
 import gym.db.Korisnik;
 
-public class LoginController {
+public class LoginController extends Controller {
 	@FXML
 	private PasswordField zaporka;
 	@FXML
@@ -37,6 +38,7 @@ public class LoginController {
 
 	private final Logger log = Logger.getLogger(LoginController.class.getName());
 
+	@Override
 	public void initController() {
 		// gymProperties = new GymProperties();
 		lbl_korisnicko_ime.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "user"));
@@ -63,11 +65,13 @@ public class LoginController {
 			error_label.setText(GymProperties.getMessage(GymProperties.ERRMESSAGE, "empty_field"));
 			log.info("Empty 'korisniko_ime' or 'zaporka' while trying login");
 		} else {
-			HashMap<String, String[]> tmp = new HashMap<>();
-			String restriction = "eq;"+korisnicko_ime.getText();
-			tmp.put("kor_ime",restriction.split(";"));
+			HashMap<String[],String> tmp = new HashMap<>();
+			String restriction = "eq;kor_ime";
+			tmp.put(restriction.split(";"),korisnicko_ime.getText());
+			List<HashMap<String[],?>> l = new ArrayList<>();
+			l.add(tmp);
 			@SuppressWarnings("unchecked")
-			List<Korisnik> korisnik =DbOperation.Instance().getValue(tmp,Korisnik.class);
+			List<Korisnik> korisnik =DbOperation.Instance().getValue(l,Korisnik.class);
 			if (korisnik.isEmpty()) {
 				error_label.setText(GymProperties.getMessage(GymProperties.ERRMESSAGE, "wrong_username"));
 				log.info("Wrong user name " + korisnicko_ime.getText());

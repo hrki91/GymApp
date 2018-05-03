@@ -13,3 +13,5 @@ insert into clanarina(naziv, aktivna, trajanje_u_danima, br_treninga_u_tjednu, c
 insert into clan (ime, prezime, datum_rodenja, adresa, clanarina, trening) values
 ("Hrvoje","Spanja",'1991-09-06',"Vrtic 21",1,1),("Marko","Havoic",'1990-01-01',"Zagorje 1",1,2);
 
+insert into clanarina_clana (clan, start_date, end_date) values(
+1,'2018-03-22','2018-04-22'),(2,'2018-01-01','2018-02-01')

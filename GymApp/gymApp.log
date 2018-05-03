@@ -1,36 +1,225 @@
-22-03-2018 15:31:55 INFO  Main:44 - Pocetak rada
-22-03-2018 15:31:55 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:31:55 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:31:55 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:31:55 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:31:55 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:31:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:31:56 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:31:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:31:57 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:31:58 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:31:58 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:31:58 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:31:58 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:31:58 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:31:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:32:00 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e0aadd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-22-03-2018 15:32:06 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:32:06 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:32:06 INFO  DefaultLoadEventListener:129 - HHH000327: Error performing load command : org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of gym.db.Clanarina.br_treniga_u_tjednu
-22-03-2018 15:32:06 ERROR Main:104 - 
+28-04-2018 16:05:24 INFO  Main:55 - Pocetak rada
+28-04-2018 16:05:24 INFO  GymProperties:24 - Loading properties
+28-04-2018 16:05:24 INFO  GymProperties:31 - Properties loaded
+28-04-2018 16:05:24 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+28-04-2018 16:05:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+28-04-2018 16:05:24 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+28-04-2018 16:05:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:05:27 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+28-04-2018 16:05:27 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+28-04-2018 16:05:27 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+28-04-2018 16:05:27 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+28-04-2018 16:05:27 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+28-04-2018 16:05:27 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+28-04-2018 16:05:27 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+28-04-2018 16:05:29 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+28-04-2018 16:05:35 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:05:35 INFO  MainMenuController:36 - Ucitavanje glavnog menija
+28-04-2018 16:05:35 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:05:35 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:05:38 INFO  MainMenuController:61 - Otvaram formuPo?etna stranica
+28-04-2018 16:05:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:05:55 INFO  MainMenuController:61 - Otvaram formuKorisnici
+28-04-2018 16:05:57 INFO  MainMenuController:61 - Otvaram formuPo?etna stranica
+28-04-2018 16:05:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:06:12 INFO  MainMenuController:61 - Otvaram formuKorisnici
+28-04-2018 16:06:13 INFO  MainMenuController:61 - Otvaram formuPo?etna stranica
+28-04-2018 16:06:13 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:11:30 INFO  Main:55 - Pocetak rada
+28-04-2018 16:11:30 INFO  GymProperties:24 - Loading properties
+28-04-2018 16:11:30 INFO  GymProperties:31 - Properties loaded
+28-04-2018 16:11:31 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+28-04-2018 16:11:31 INFO  Environment:213 - HHH000206: hibernate.properties not found
+28-04-2018 16:11:31 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:31 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+28-04-2018 16:11:31 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:11:33 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+28-04-2018 16:11:33 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+28-04-2018 16:11:33 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+28-04-2018 16:11:33 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+28-04-2018 16:11:33 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+28-04-2018 16:11:33 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+28-04-2018 16:11:34 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+28-04-2018 16:11:35 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+28-04-2018 16:11:41 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:11:41 INFO  MainMenuController:36 - Ucitavanje glavnog menija
+28-04-2018 16:11:41 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:11:41 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:11:43 INFO  MainMenuController:60 - Otvaram formu?lanarina
+28-04-2018 16:11:45 INFO  MainMenuController:60 - Otvaram formuKorisnici
+28-04-2018 16:11:47 INFO  MainMenuController:60 - Otvaram formuPo?etna stranica
+28-04-2018 16:11:47 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:14:31 INFO  Main:55 - Pocetak rada
+28-04-2018 16:14:31 INFO  GymProperties:24 - Loading properties
+28-04-2018 16:14:31 INFO  GymProperties:31 - Properties loaded
+28-04-2018 16:14:31 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+28-04-2018 16:14:31 INFO  Environment:213 - HHH000206: hibernate.properties not found
+28-04-2018 16:14:32 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+28-04-2018 16:14:32 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+28-04-2018 16:14:34 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+28-04-2018 16:14:34 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+28-04-2018 16:14:34 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+28-04-2018 16:14:34 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+28-04-2018 16:14:34 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+28-04-2018 16:14:34 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+28-04-2018 16:14:35 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+28-04-2018 16:14:36 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+28-04-2018 16:14:41 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:14:41 INFO  MainMenuController:36 - Ucitavanje glavnog menija
+28-04-2018 16:14:41 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:14:41 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+28-04-2018 16:14:43 INFO  MainMenuController:72 - Closing MainMenu Form
+28-04-2018 16:14:45 INFO  LoginController:109 - Gašenje aplikacije
+03-05-2018 13:44:17 INFO  Main:55 - Pocetak rada
+03-05-2018 13:44:17 INFO  GymProperties:24 - Loading properties
+03-05-2018 13:44:17 INFO  GymProperties:31 - Properties loaded
+03-05-2018 13:44:18 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 13:44:18 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 13:44:18 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 13:44:18 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 13:44:20 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 13:44:20 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 13:44:20 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 13:44:20 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 13:44:20 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 13:44:20 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 13:44:21 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 13:44:23 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 13:44:30 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 13:44:30 INFO  MainMenuController:36 - Ucitavanje glavnog menija
+03-05-2018 13:44:30 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 13:44:30 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 13:45:09 INFO  MainMenuController:67 - Otvaram formu?lanovi
+03-05-2018 13:45:11 INFO  MainMenuController:67 - Otvaram formu?lanarina
+03-05-2018 13:45:13 INFO  MainMenuController:67 - Otvaram formu?lanarine
+03-05-2018 13:45:17 INFO  MainMenuController:67 - Otvaram formuPlan treniga
+03-05-2018 13:45:22 INFO  MainMenuController:72 - Closing MainMenu Form
+03-05-2018 13:45:24 INFO  LoginController:110 - Gašenje aplikacije
+03-05-2018 14:16:28 INFO  Main:55 - Pocetak rada
+03-05-2018 14:16:28 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:16:28 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:16:28 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:16:28 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:16:28 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:29 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:16:29 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:30 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:16:31 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:16:31 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:16:31 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:16:31 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:16:31 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:16:31 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:16:32 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:16:33 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d3fb0ef] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:16:40 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:16:41 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 14:16:41 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:20:05 INFO  Main:55 - Pocetak rada
+03-05-2018 14:20:05 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:20:05 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:20:05 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:20:05 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:20:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:20:06 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:20:08 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:20:08 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:20:08 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:20:08 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:20:08 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:20:08 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:20:09 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:20:11 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7d3fb0ef] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:20:16 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:20:17 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 14:20:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:32:31 INFO  Main:55 - Pocetak rada
+03-05-2018 14:32:31 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:32:31 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:32:32 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:32:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:32:32 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:32:33 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:35 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:35 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:35 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:35 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:35 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:36 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:36 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:36 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:32:36 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:32:36 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:32:36 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:32:36 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:32:36 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:32:36 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:32:37 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:32:38 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:32:47 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:32:47 INFO  MainMenuController:37 - Ucitavanje glavnog menija
+03-05-2018 14:32:47 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:32:47 ERROR Main:115 - 
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at gym.Main.setScreen(Main.java:93)
-	at gym.view.LoginController.login(LoginController.java:96)
-	at gym.view.LoginController.keyPress(LoginController.java:112)
+	at gym.Main.setScreen(Main.java:107)
+	at gym.view.LoginController.login(LoginController.java:99)
+	at gym.view.LoginController.keyPress(LoginController.java:116)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -70,43 +259,48 @@ java.lang.reflect.InvocationTargetException
 	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.NullPointerException
-	at gym.view.HomePageController.getMembers(HomePageController.java:70)
-	at gym.view.HomePageController.initController(HomePageController.java:33)
+Caused by: java.lang.IllegalArgumentException: Children: duplicate children added: parent = AnchorPane@6228d6eb[styleClass=pane]
+	at javafx.scene.Parent$2.onProposedChange(Parent.java:454)
+	at com.sun.javafx.collections.VetoableListDecorator.add(VetoableListDecorator.java:206)
+	at gym.view.MainMenuController.setMainApp(MainMenuController.java:64)
 	... 46 more
-22-03-2018 15:34:51 INFO  Main:44 - Pocetak rada
-22-03-2018 15:34:51 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:34:51 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:34:51 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:34:51 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:34:51 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:34:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:34:51 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:34:53 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:34:53 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:34:53 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:34:53 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:34:53 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:34:53 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:34:53 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:34:54 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:34:55 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e0aadd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-22-03-2018 15:35:00 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:35:00 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:35:00 INFO  DefaultLoadEventListener:129 - HHH000327: Error performing load command : org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of gym.db.Clanarina.br_treniga_u_tjednu
-22-03-2018 15:35:00 ERROR Main:104 - 
+03-05-2018 14:32:47 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:33:17 INFO  Main:55 - Pocetak rada
+03-05-2018 14:33:17 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:33:17 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:33:17 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:33:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:33:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:33:18 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:33:19 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:33:19 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:33:19 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:33:19 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:33:19 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:33:19 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:33:20 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:33:21 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:33:27 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:33:27 INFO  MainMenuController:37 - Ucitavanje glavnog menija
+03-05-2018 14:33:27 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:33:27 ERROR Main:115 - 
 java.lang.reflect.InvocationTargetException
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at gym.Main.setScreen(Main.java:93)
-	at gym.view.LoginController.login(LoginController.java:96)
-	at gym.view.LoginController.keyPress(LoginController.java:112)
+	at gym.Main.setScreen(Main.java:107)
+	at gym.view.LoginController.login(LoginController.java:99)
+	at gym.view.LoginController.keyPress(LoginController.java:116)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -146,198 +340,252 @@ java.lang.reflect.InvocationTargetException
 	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
 	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.NullPointerException
-	at gym.view.HomePageController.getMembers(HomePageController.java:70)
-	at gym.view.HomePageController.initController(HomePageController.java:33)
+Caused by: java.lang.IllegalArgumentException: Children: duplicate children added: parent = AnchorPane@3c109bbd[styleClass=pane]
+	at javafx.scene.Parent$2.onProposedChange(Parent.java:454)
+	at com.sun.javafx.collections.VetoableListDecorator.add(VetoableListDecorator.java:206)
+	at gym.view.MainMenuController.setMainApp(MainMenuController.java:64)
 	... 46 more
-22-03-2018 15:35:35 INFO  Main:44 - Pocetak rada
-22-03-2018 15:35:35 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:35:35 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:35:35 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:35:35 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:35:35 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:35:36 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:35:36 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:35:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:35:38 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:35:38 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:35:38 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:35:38 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:35:38 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:35:38 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:35:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:35:41 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@52f57666] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-22-03-2018 15:35:48 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:36:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:36:07 INFO  DefaultLoadEventListener:129 - HHH000327: Error performing load command : org.hibernate.PropertyAccessException: Null value was assigned to a property of primitive type setter of gym.db.Clanarina.br_treniga_u_tjednu
-22-03-2018 15:36:07 ERROR Main:104 - 
-java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at gym.Main.setScreen(Main.java:93)
-	at gym.view.LoginController.login(LoginController.java:96)
-	at gym.view.LoginController.keyPress(LoginController.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
-	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
-	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
-	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
-	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
-	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
-	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
-	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
-	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
-	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
-	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
-	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
-	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
-	at javafx.event.Event.fireEvent(Event.java:198)
-	at javafx.scene.Scene$KeyHandler.process(Scene.java:3964)
-	at javafx.scene.Scene$KeyHandler.access$1800(Scene.java:3910)
-	at javafx.scene.Scene.impl_processKeyEvent(Scene.java:2040)
-	at javafx.scene.Scene$ScenePeerListener.keyEvent(Scene.java:2501)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:217)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler$KeyEventNotification.run(GlassViewEventHandler.java:149)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleKeyEvent$352(GlassViewEventHandler.java:248)
-	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
-	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleKeyEvent(GlassViewEventHandler.java:247)
-	at com.sun.glass.ui.View.handleKeyEvent(View.java:546)
-	at com.sun.glass.ui.View.notifyKey(View.java:966)
-	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
-	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: java.lang.NullPointerException
-	at gym.view.HomePageController.getMembers(HomePageController.java:70)
-	at gym.view.HomePageController.initController(HomePageController.java:33)
-	... 46 more
-22-03-2018 15:36:25 INFO  Main:44 - Pocetak rada
-22-03-2018 15:36:25 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:36:25 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:36:26 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:36:26 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:36:26 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:36:26 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:36:26 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:36:28 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:36:28 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:36:28 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:36:28 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:36:28 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:36:28 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:36:28 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:36:29 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:36:31 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b887730] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-22-03-2018 15:36:37 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:36:37 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:37:35 ERROR ExceptionMapperStandardImpl:39 - HHH000346: Error during managed flush [org.hibernate.PropertyAccessException: Exception occurred inside getter of gym.db.Clanarina.br_treniga_u_tjednu]
-22-03-2018 15:39:05 INFO  Main:44 - Pocetak rada
-22-03-2018 15:39:05 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:39:05 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:39:06 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:39:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:39:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:39:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:39:06 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:39:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:39:08 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:39:08 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:39:08 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:39:08 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:39:08 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:39:08 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:39:09 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:39:11 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@b887730] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-22-03-2018 15:39:16 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:39:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:39:58 INFO  MainMenuController:30 - Closing MainMenu Form
-22-03-2018 15:39:59 INFO  LoginController:106 - Gašenje aplikacije
-22-03-2018 15:40:41 INFO  Main:44 - Pocetak rada
-22-03-2018 15:40:41 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:40:41 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:40:42 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:40:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:40:42 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:40:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:40:42 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:40:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:40:44 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:40:44 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:40:44 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:40:44 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:40:44 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:40:44 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:40:45 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:41:39 INFO  Main:44 - Pocetak rada
-22-03-2018 15:41:39 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:41:39 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:41:39 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:41:39 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:41:39 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:41:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:41:39 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:41:41 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:41:41 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:41:41 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:41:41 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:41:41 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:41:41 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:41:41 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:41:42 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:41:43 INFO  pooling:233 - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:42:09 INFO  Main:44 - Pocetak rada
-22-03-2018 15:42:09 INFO  GymProperties:24 - Loading properties
-22-03-2018 15:42:09 INFO  GymProperties:31 - Properties loaded
-22-03-2018 15:42:09 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
-22-03-2018 15:42:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
-22-03-2018 15:42:09 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:42:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-22-03-2018 15:42:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:42:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-22-03-2018 15:42:11 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-22-03-2018 15:42:11 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-22-03-2018 15:42:11 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
-22-03-2018 15:42:11 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
-22-03-2018 15:42:11 INFO  pooling:143 - HHH10001003: Autocommit mode: false
-22-03-2018 15:42:11 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
-22-03-2018 15:42:12 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-22-03-2018 15:42:13 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e0aadd0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-22-03-2018 15:42:19 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:42:19 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
-22-03-2018 15:42:24 INFO  MainMenuController:30 - Closing MainMenu Form
-22-03-2018 15:42:26 INFO  LoginController:106 - Gašenje aplikacije
+03-05-2018 14:33:27 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:33:36 INFO  MainMenuController:72 - Otvaram formuPo?etna stranica
+03-05-2018 14:33:36 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:33:37 INFO  MainMenuController:72 - Otvaram formuPo?etna stranica
+03-05-2018 14:33:37 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:36:06 INFO  Main:55 - Pocetak rada
+03-05-2018 14:36:06 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:36:06 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:36:07 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:36:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:36:07 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:36:07 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:36:09 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:36:09 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:36:09 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:36:09 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:36:09 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:36:09 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:36:10 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:36:11 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:36:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:36:17 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 14:36:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:36:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:37:11 INFO  Main:55 - Pocetak rada
+03-05-2018 14:37:11 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:37:11 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:37:12 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:37:12 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:37:12 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:37:12 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:37:14 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:37:14 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:37:14 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:37:14 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:37:14 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:37:14 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:37:15 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:37:16 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:37:21 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:37:21 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 14:37:21 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:37:22 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:37:38 INFO  MainMenuController:64 - Otvaram formuPo?etna stranica
+03-05-2018 14:37:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:37:40 INFO  MainMenuController:64 - Otvaram formu?lanovi
+03-05-2018 14:45:13 INFO  Main:55 - Pocetak rada
+03-05-2018 14:45:13 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:45:13 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:45:13 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:45:13 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:45:13 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:45:14 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:15 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:45:16 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:45:16 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:45:16 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:45:16 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:45:16 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:45:16 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:45:17 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:45:18 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:45:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:45:25 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 14:45:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:45:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:45:28 INFO  MainMenuController:64 - Otvaram formu?lanovi
+03-05-2018 14:52:57 INFO  Main:55 - Pocetak rada
+03-05-2018 14:52:57 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:52:57 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:52:57 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:52:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:52:57 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:52:57 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:52:59 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:52:59 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:52:59 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:52:59 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:52:59 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:52:59 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:53:00 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:53:01 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:53:08 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:53:08 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 14:53:08 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:53:08 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:53:11 INFO  MainMenuController:64 - Otvaram formuPo?etna stranica
+03-05-2018 14:53:11 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:53:13 INFO  MainMenuController:64 - Otvaram formu?lanovi
+03-05-2018 14:55:36 INFO  Main:55 - Pocetak rada
+03-05-2018 14:55:36 INFO  GymProperties:24 - Loading properties
+03-05-2018 14:55:36 INFO  GymProperties:31 - Properties loaded
+03-05-2018 14:55:36 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 14:55:36 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 14:55:36 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 14:55:37 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:38 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 14:55:39 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 14:55:39 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 14:55:39 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 14:55:39 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 14:55:39 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 14:55:39 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 14:55:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 14:55:41 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 14:55:51 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:55:51 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 14:55:51 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:55:51 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 14:55:53 INFO  MainMenuController:64 - Otvaram formu?lanovi
+03-05-2018 14:56:10 INFO  MainMenuController:69 - Closing MainMenu Form
+03-05-2018 14:56:11 INFO  LoginController:110 - Gašenje aplikacije
+03-05-2018 15:04:19 INFO  Main:55 - Pocetak rada
+03-05-2018 15:04:19 INFO  GymProperties:24 - Loading properties
+03-05-2018 15:04:19 INFO  GymProperties:31 - Properties loaded
+03-05-2018 15:04:20 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 15:04:20 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 15:04:20 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 15:04:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:04:22 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 15:04:22 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 15:04:22 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 15:04:22 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 15:04:22 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 15:04:22 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 15:04:23 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 15:04:24 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 15:04:29 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:04:29 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 15:04:29 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:04:29 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:04:31 INFO  MainMenuController:64 - Otvaram formu?lanovi
+03-05-2018 15:04:44 INFO  MainMenuController:69 - Closing MainMenu Form
+03-05-2018 15:04:46 INFO  LoginController:110 - Gašenje aplikacije
+03-05-2018 15:06:17 INFO  Main:56 - Pocetak rada
+03-05-2018 15:06:17 INFO  GymProperties:24 - Loading properties
+03-05-2018 15:06:17 INFO  GymProperties:31 - Properties loaded
+03-05-2018 15:06:17 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 15:06:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 15:06:17 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 15:06:18 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:06:20 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 15:06:20 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 15:06:20 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 15:06:20 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 15:06:20 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 15:06:20 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 15:06:20 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 15:06:22 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 15:06:28 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:06:33 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:06:33 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 15:06:33 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:06:33 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:06:39 INFO  MainMenuController:64 - Otvaram formu?lanovi
+03-05-2018 15:08:22 INFO  Main:56 - Pocetak rada
+03-05-2018 15:08:22 INFO  GymProperties:24 - Loading properties
+03-05-2018 15:08:22 INFO  GymProperties:31 - Properties loaded
+03-05-2018 15:08:23 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+03-05-2018 15:08:23 INFO  Environment:213 - HHH000206: hibernate.properties not found
+03-05-2018 15:08:23 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:23 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+03-05-2018 15:08:23 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+03-05-2018 15:08:25 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+03-05-2018 15:08:25 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+03-05-2018 15:08:25 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+03-05-2018 15:08:25 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+03-05-2018 15:08:25 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+03-05-2018 15:08:25 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+03-05-2018 15:08:26 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+03-05-2018 15:08:27 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@677dbd89] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+03-05-2018 15:08:35 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:08:36 INFO  MainMenuController:34 - Ucitavanje glavnog menija
+03-05-2018 15:08:36 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+03-05-2018 15:08:36 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead

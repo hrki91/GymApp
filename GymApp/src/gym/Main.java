@@ -18,6 +18,17 @@ public class Main extends Application {
 	static final Logger log = Logger.getLogger(Main.class);
 	private Stage primaryStage;
 	private BorderPane rootLayout;
+	private Scene scene;
+	private AnchorPane ap;
+	
+	public Scene getScene() {
+		return this.scene;
+	}
+	
+	public AnchorPane getAnchorPane() {
+		return this.ap;
+	}
+	
 
 	@Override
 	public void start(Stage primaryStage) {
@@ -25,8 +36,9 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/RootLayout.fxml"));
 			rootLayout = (BorderPane) loader.load();
+			rootLayout.setMinSize(200, 200);
 
-			Scene scene = new Scene(rootLayout);
+			scene = new Scene(rootLayout);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
@@ -42,7 +54,7 @@ public class Main extends Application {
 		PropertyConfigurator.configure(args[2]);
 		// INICIJALIZACIJA PROPERTY FILE-OVA, VRIJEDNOSTI SE DOBIVAJU IZ POZIVA JAVE
 		log.info("Pocetak rada");
-		new GymProperties().initProperties(args[0], args[1]);
+		new GymProperties().initProperties(args[1], args[0]);
 		DbOperation.Instance();
 		launch(args);
 	}
@@ -73,7 +85,7 @@ public class Main extends Application {
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource(fxml));
-			AnchorPane ap = loader.load();
+			ap = loader.load();
 			if(position.equals("center"))
 				rootLayout.setCenter(ap);
 			else if (position.equals("left"))	

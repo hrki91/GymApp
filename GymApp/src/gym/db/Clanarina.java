@@ -3,7 +3,7 @@ package gym.db;
 public class Clanarina {
 	private int id;
 	private String naziv;
-	private int aktivna;
+	private Boolean aktivna;
 	private int trajanje_u_danima;
 	private int br_treninga_u_tjednu;
 	private double cijena;
@@ -26,10 +26,10 @@ public class Clanarina {
 	public void setNaziv(String naziv) {
 		this.naziv = naziv;
 	}
-	public int getAktivna() {
+	public Boolean getAktivna() {
 		return aktivna;
 	}
-	public void setAktivna(int aktivna) {
+	public void setAktivna(Boolean aktivna) {
 		this.aktivna = aktivna;
 	}
 	public int getBr_treninga_u_tjednu() {
@@ -43,5 +43,18 @@ public class Clanarina {
 	}
 	public void setCijena(double cijena) {
 		this.cijena = cijena;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (obj != null) {
+			Clanarina tt = (Clanarina) obj;
+			if(tt.getId() == this.id)
+				return true;
+		}
+		return false;
+	}
+	@Override
+	public String toString() {
+		return this.naziv;
 	}
 }

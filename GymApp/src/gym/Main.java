@@ -123,6 +123,7 @@ public class Main extends Application {
 			}
 		} catch (IOException e) {
 			log.error("IOException",e);
+			e.printStackTrace();
 		}
 	}
 }

@@ -29,6 +29,7 @@
 		<mapping resource="gym/db/Clanarina_clana.hbm.xml"/>
 		<mapping resource="gym/db/Dolasci.hbm.xml"/>
 		<mapping resource="gym/db/Glavni_meni.hbm.xml"/>
+		<mapping resource="gym/db/Skupina_tijela.hbm.xml"/>
         
   </session-factory>    
   

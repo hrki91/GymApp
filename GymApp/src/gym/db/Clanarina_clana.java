@@ -31,4 +31,13 @@ public class Clanarina_clana {
 	public void setEnd_date(Date end_date) {
 		this.end_date = end_date;
 	}
+	@Override
+	public boolean equals(Object obj) {
+		if (obj != null) {
+			Clanarina_clana tt = (Clanarina_clana) obj;
+			if(tt.getId() == this.id)
+				return true;
+		}
+		return false;
+	}
 }

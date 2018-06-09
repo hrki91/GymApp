@@ -4,7 +4,6 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,35 +11,25 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gym.view.UserController">
    <children>
-      <TableView layoutX="-7.0" prefHeight="516.0" prefWidth="338.0">
-        <columns>
-          <TableColumn fx:id="kol1" prefWidth="75.0" />
-            <TableColumn fx:id="kol2" prefWidth="75.0" />
-            <TableColumn fx:id="kol3" prefWidth="35.0" />
-            <TableColumn fx:id="kol4" prefWidth="59.0" />
-            <TableColumn fx:id="kol5" prefWidth="66.0" />
-        </columns>
-      </TableView>
-      <Button fx:id="b_izmjeni" layoutY="515.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="101.0" />
-      <Button fx:id="b_obrisi" layoutX="112.0" layoutY="515.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="101.0" />
+      <TableView fx:id="tv" layoutX="6.0" onMouseClicked="#onClickListView" prefHeight="516.0" prefWidth="325.0" />
+      <Button fx:id="b_novo" layoutY="515.0" mnemonicParsing="false" onAction="#show" prefHeight="36.0" prefWidth="130.0" />
+      <Button fx:id="b_obrisi" onAction="#delete" layoutX="198.0" layoutY="515.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="130.0" />
       <Pane fx:id="dataPane" layoutX="331.0" prefHeight="516.0" prefWidth="325.0">
          <children>
             <TextField fx:id="t_ime" layoutX="162.0" layoutY="27.0" />
             <TextField fx:id="t_kor_ime" layoutX="162.0" layoutY="185.0" />
             <Label fx:id="ime" layoutX="14.0" layoutY="27.0" prefHeight="25.0" prefWidth="101.0" />
-            <Label fx:id="zaporka" layoutX="14.0" layoutY="233.0" prefHeight="25.0" prefWidth="101.0" />
-            <Label fx:id="aktivna" layoutX="13.0" layoutY="280.0" prefHeight="25.0" prefWidth="101.0" />
+            <Label fx:id="aktivna" layoutX="14.0" layoutY="246.0" prefHeight="25.0" prefWidth="101.0" />
             <Label fx:id="tip" layoutX="14.0" layoutY="127.0" prefHeight="25.0" prefWidth="101.0" />
             <Label fx:id="kor_ime" layoutX="14.0" layoutY="185.0" prefHeight="25.0" prefWidth="101.0" />
-            <Button fx:id="b_potvrda" layoutX="14.0" layoutY="405.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" />
-            <Button fx:id="b_ponisti" layoutX="171.0" layoutY="405.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" />
+            <Button fx:id="b_potvrda" onAction="#insert" layoutX="14.0" layoutY="405.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" />
+            <Button fx:id="b_ponisti" onAction="#back" layoutX="171.0" layoutY="405.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" />
             <TextField fx:id="t_prezime" layoutX="162.0" layoutY="76.0" />
-            <TextField fx:id="t_prezime" layoutX="162.0" layoutY="233.0" />
-            <CheckBox fx:id="t_aktivna" layoutX="162.0" layoutY="284.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="149.0" />
+            <CheckBox fx:id="t_aktivna" layoutX="163.0" layoutY="250.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="149.0" />
             <Label fx:id="prezime" layoutX="21.0" layoutY="76.0" prefHeight="25.0" prefWidth="101.0" />
             <ChoiceBox fx:id="t_tip" layoutX="162.0" layoutY="127.0" prefWidth="150.0" />
+            <Label fx:id="poruka" layoutX="18.0" layoutY="509.0" prefHeight="36.0" prefWidth="300.0" />
          </children>
       </Pane>
-      <Button fx:id="b_produziClanarinu" layoutX="227.0" layoutY="516.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="101.0" />
    </children>
 </AnchorPane>

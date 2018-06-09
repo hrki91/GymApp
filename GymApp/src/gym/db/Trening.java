@@ -30,4 +30,17 @@ public class Trening {
 	public void setTezina(int tezina) {
 		this.tezina = tezina;
 	}
+	@Override
+	public boolean equals(Object obj) {
+		if (obj != null) {
+			Trening tt = (Trening) obj;
+			if(tt.getId() == this.id)
+				return true;
+		}
+		return false;
+	}
+	@Override
+	public String toString() {
+		return this.naziv;
+	}
 }

@@ -10,8 +10,8 @@
         	<generator class="native"/>
         </id>				
 		<property name="datum_rodenja"/>
-		<many-to-one name="clanarina" column="clanarina" lazy="false" />
-		<many-to-one name="trening" column="trening" lazy="false" />	
+		<many-to-one name="clanarina" column="clanarina" lazy="false" cascade="all" />
+		<many-to-one name="trening" column="trening" lazy="false"  />	
 		<property name="adresa"/>
 		<property name="ime"/>	
 		<property name="prezime"/>				

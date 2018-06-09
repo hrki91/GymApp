@@ -1,11 +1,15 @@
 package gym.db;
 
+import java.util.Date;
+
 public class Korisnik {
 	private int id;
 	private String ime;
+	private String prezime;
 	private Tip_korisnika tip_korisnika;
 	private String kor_ime;
 	private String zaporka;
+	private Date datum_rodenja;
 	private boolean aktivan;
 	
 	public String getIme() {
@@ -44,5 +48,17 @@ public class Korisnik {
 	}
 	public void setTip_korisnika(Tip_korisnika tip_korisnika) {
 		this.tip_korisnika = tip_korisnika;
+	}
+	public String getPrezime() {
+		return prezime;
+	}
+	public void setPrezime(String prezime) {
+		this.prezime = prezime;
+	}
+	public Date getDatum_rodenja() {
+		return datum_rodenja;
+	}
+	public void setDatum_rodenja(Date datum_rodenja) {
+		this.datum_rodenja = datum_rodenja;
 	}
 }

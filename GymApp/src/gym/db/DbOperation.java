@@ -4,7 +4,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.persistence.EntityManager;
+
 import org.hibernate.Criteria;
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -31,10 +34,10 @@ public class DbOperation {
 	}
 
 	/**
-	 * METODA KOJA SLUéI ZA DOBIVANJE VRIJEDNOSTI IZ BAZE. OBAVEZNI PARAMETRI SU
-	 * HASH MAPA KOJA KAO KLJUC KOJA KAO VRIJEDNOSTI IMA
-	 * POLJE KOJE BI TREBALO SADRéAVATI 2 VRIJEDNOSTI. PRVA VRIJEDNOST TIP
-	 * RESTRIKCIJE,DRUGA VRIJEDNOST NAZIV KOLONE. KAO VRIJEDNOST HASH MAPE NALAZI SE VRIJEDNOST NEPOZNATOG TIPA
+	 * METODA KOJA SLUÔøΩI ZA DOBIVANJE VRIJEDNOSTI IZ BAZE. OBAVEZNI PARAMETRI SU
+	 * HASH MAPA KOJA KAO KLJUC KOJA KAO VRIJEDNOSTI IMA POLJE KOJE BI TREBALO
+	 * SADRÔøΩAVATI 2 VRIJEDNOSTI. PRVA VRIJEDNOST TIP RESTRIKCIJE,DRUGA VRIJEDNOST
+	 * NAZIV KOLONE. KAO VRIJEDNOST HASH MAPE NALAZI SE VRIJEDNOST NEPOZNATOG TIPA
 	 * 
 	 * @param criteria,klasa
 	 * @return {@link org.hibernate.mapping.List}
@@ -48,14 +51,14 @@ public class DbOperation {
 		Transaction tx = null;
 		try {
 			Criteria c = s.createCriteria(klasa);
-			if (!criteria.isEmpty()) {				
-				for (HashMap<String[],?> object : criteria) {
+			if (!criteria.isEmpty()) {
+				for (HashMap<String[], ?> object : criteria) {
 					for (Map.Entry<String[], ?> entry : object.entrySet()) {
 						String tmp[] = entry.getKey();
 						if (tmp[0].equals("eq"))
-							c.add(Restrictions.eq(tmp[1],entry.getValue()));
-						else if (tmp[0].equals("gt")) 
-							c.add(Restrictions.gt(tmp[1],entry.getValue()));						
+							c.add(Restrictions.eq(tmp[1], entry.getValue()));
+						else if (tmp[0].equals("gt"))
+							c.add(Restrictions.gt(tmp[1], entry.getValue()));
 					}
 				}
 			}
@@ -72,21 +75,54 @@ public class DbOperation {
 		}
 		return list;
 	}
-	
+
 	/**
 	 * 
-	 * @return true - Uspijeöan unos, false - neuspijeöan unos
-	 * */
-	public boolean insertValue(Dolasci dolasci) {
+	 * @return true - UspijeÔøΩan unos, false - neuspijeÔøΩan unos
+	 */
+	public boolean insertValue(Object klasa) {
 		Session s = factory.openSession();
 		Transaction tx = null;
-		tx=s.beginTransaction();
-		s.save(dolasci);
-		s.flush();
-		tx.commit();		
+		try {
+			tx = s.beginTransaction();
+			s.saveOrUpdate(klasa);
+			s.flush();
+			tx.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+		s.close();
+
 		return true;
 	}
-	
 
+	/**
+	 * METODA ZA DELETE.
+	 * 
+	 * @param id
+	 *            - Primarni kljuƒç
+	 * @param klasa
+	 *            - Objekt koji se bri≈°e/mjenja
+	 */
+	public boolean deleteByPrimaryKey(int id, Object klasa) {
+		boolean status = false;
+		Session s = factory.openSession();
+		Transaction tx = null;
+		try {
+			Object k = (Object) s.load(klasa.getClass(), id);
+			tx = s.beginTransaction();
+			s.delete(k);
+
+			tx.commit();
+			status = true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			tx.rollback();
+			status = false;
+		}
+		s.close();
+		return status;
+	}
 
 }

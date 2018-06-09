@@ -10,7 +10,9 @@
         	<generator class="native"/>
         </id>				
 		<property name="ime"/>
+		<property name="prezime"/>
 		<many-to-one name="tip_korisnika" column="tip_korisnika" lazy="false" />	
+		<property name="datum_rodenja"/>
 		<property name="kor_ime"/>
 		<property name="zaporka"/>	
 		<property name="aktivan"/>				

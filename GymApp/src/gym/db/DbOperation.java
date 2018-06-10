@@ -27,7 +27,7 @@ public class DbOperation {
 
 	public DbOperation() {
 		try {
-			factory = new Configuration().configure("loyaltyHibernate.cfg.xml").buildSessionFactory();
+			factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 		} catch (Throwable ex) {
 			ex.printStackTrace();
 		}

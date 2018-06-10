@@ -1,30 +1,24 @@
 package gym.view;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
-
 import gym.GymProperties;
 import gym.db.Clan;
 import gym.db.Clanarina;
-import gym.db.Clanarina_clana;
 import gym.db.DbOperation;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListCell;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
-import javafx.util.Callback;
 
 public class MembershipController extends DataController {
 
@@ -62,6 +56,21 @@ public class MembershipController extends DataController {
 		trajanje.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "duration"));
 		br_treninga.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "trening_number"));
 		cijena.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "price"));
+		
+		tv.setRowFactory(row -> new TableRow<Clanarina>() {
+			@Override
+			public void updateItem(Clanarina item, boolean empty) {
+				super.updateItem(item, empty);
+				if (item == null || empty) {
+					setStyle("");
+				} else {
+					// Now 'item' has all the info of the Person in this row
+					if (!item.getAktivna()) {
+						getStyleClass().add("warningRows");
+					}
+				}
+			}
+		});
 		getData();
 	}
 
@@ -69,36 +78,37 @@ public class MembershipController extends DataController {
 		if (_clanarina != null && tv.getSelectionModel().getSelectedItem() != null) {
 			if (!delete(_clanarina.getId(), _clanarina)) {
 				showMessageBox(AlertType.ERROR, GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.title"),
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMemberShip.error") + _clanarina.getNaziv(), 
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMemberShip.message"),
-						null);
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMemberShip.error")
+								+ _clanarina.getNaziv(),
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMemberShip.message"));
 			} else
 				refreshTable(this, tv);
 		} else
-			showMessageBox(AlertType.WARNING,GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.title") ,
-					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "",null);
+			showMessageBox(AlertType.WARNING,
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.title"),
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "");
 	}
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public void getData() {
 		List<HashMap<String[], ?>> l = new ArrayList<>();
 		List<Clanarina> clanarine = DbOperation.Instance().getValue(l, Clanarina.class);
 
 		TableColumn id = new TableColumn("id");
 		TableColumn naziv = new TableColumn("Naziv");
-		TableColumn aktivna = new TableColumn("Aktivna");
 		TableColumn trajanje_u_danima = new TableColumn("Trajanje u danima");
-		TableColumn br_treninga_u_tjednu = new TableColumn("Trajanje u danima");
-		TableColumn cijena = new TableColumn("Trajanje u danima");
+		TableColumn br_treninga_u_tjednu = new TableColumn("Broj treninga u tjednu");
+		TableColumn cijena = new TableColumn("Cjena");
+		tv.getColumns().addAll(id, naziv, trajanje_u_danima, br_treninga_u_tjednu, cijena);
 
-		tv.getColumns().addAll(id, naziv, aktivna, trajanje_u_danima, br_treninga_u_tjednu, cijena);
-		id.setCellValueFactory(new PropertyValueFactory<Clan, String>("id"));
-		naziv.setCellValueFactory(new PropertyValueFactory<Clan, String>("naziv"));
-		aktivna.setCellValueFactory(new PropertyValueFactory<Clan, String>("aktivna"));
-		trajanje_u_danima.setCellValueFactory(new PropertyValueFactory<Clan, String>("trajanje_u_danima"));
-		br_treninga_u_tjednu.setCellValueFactory(new PropertyValueFactory<Clan, String>("br_treninga_u_tjednu"));
-		cijena.setCellValueFactory(new PropertyValueFactory<Clan, String>("cijena"));
+		id.setCellValueFactory(new PropertyValueFactory<Clanarina, String>("id"));
+		naziv.setCellValueFactory(new PropertyValueFactory<Clanarina, String>("naziv"));
+		trajanje_u_danima.setCellValueFactory(new PropertyValueFactory<Clanarina, String>("trajanje_u_danima"));
+		br_treninga_u_tjednu.setCellValueFactory(new PropertyValueFactory<Clanarina, String>("br_treninga_u_tjednu"));
+		cijena.setCellValueFactory(new PropertyValueFactory<Clanarina, String>("cijena"));
 
 		tv.setItems(FXCollections.observableArrayList(clanarine));
+
 	}
 
 	public void onClickListView(MouseEvent click) {
@@ -109,6 +119,15 @@ public class MembershipController extends DataController {
 		}
 	}
 
+	public void show() {
+		super.show();
+		update = false;
+		t_br_treninga.clear();
+		t_cijena.clear();
+		t_naziv.clear();
+		t_trajanje.clear();
+	}
+	
 	public void izmjena() {
 		if (_clanarina != null) {
 			this.t_naziv.setText(_clanarina.getNaziv());

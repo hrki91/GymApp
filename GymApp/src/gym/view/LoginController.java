@@ -14,6 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
@@ -82,6 +83,11 @@ public class LoginController extends Controller {
 				log.info("To many resaults for: " + korisnicko_ime.getText());
 				return;
 			}
+			if(!korisnik.get(0).isAktivan()) {
+				error_label.setText(GymProperties.getMessage(GymProperties.ERRMESSAGE, "userDisabled"));
+				log.info("Not active user: " + korisnicko_ime.getText());
+				return;
+			}
 
 			String hashZaporka = null;
 			try {
@@ -96,6 +102,8 @@ public class LoginController extends Controller {
 			}
 			for (Korisnik korisnik2 : korisnik) {
 				if (korisnik2.getZaporka().equals(hashZaporka)) {
+					Properties props = System.getProperties();
+					props.setProperty("user.type", String.valueOf(korisnik2.getTip_korisnika().getId()));
 					mainApp.setScreen("view/MainMenu.fxml", "gym.view.MainMenuController", true,"right");
 					mainApp.setScreen("view/HomePage.fxml", "gym.view.HomePageController",false,"center");
 				}
@@ -107,7 +115,7 @@ public class LoginController extends Controller {
 	}
 
 	public void cancel() {
-		log.info("Gašenje aplikacije");
+		log.info("Gaï¿½enje aplikacije");
 		System.exit(0);
 	}
 

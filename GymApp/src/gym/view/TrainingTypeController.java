@@ -47,13 +47,12 @@ public class TrainingTypeController extends DataController {
 			if (!delete(tp.getId(), tp)) {
 				showMessageBox(AlertType.ERROR, GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.title"),
 						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteTrainingType.error") + tp.getNaziv(), 
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteTrainingType.message"),
-						null);
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteTrainingType.message"));
 			} else
 				refreshTable(this, tv);
 		} else
 			showMessageBox(AlertType.WARNING,GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.title") ,
-					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "",null);
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "");
 	}
 
 	public void getData() {
@@ -77,6 +76,11 @@ public class TrainingTypeController extends DataController {
 			show();
 			izmjena();
 		}
+	}
+	public void show() {
+		super.show();
+		update = false;
+		t_ime.clear();
 	}
 
 	public void izmjena() {

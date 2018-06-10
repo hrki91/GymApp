@@ -31,8 +31,16 @@ public class MainMenuController extends Controller{
 	 @SuppressWarnings("unchecked")
 	public void setMainApp(Main mainApp) {
 	        this.mainApp = mainApp;
-	        log.info("Ucitavanje glavnog menija"); //TODO poruka iz properties-a
+	        HashMap<String[],Boolean> tmp = new HashMap<>();
+	        String restriction = "eq;aktivna";
+	        tmp.put(restriction.split(";"), true);	        
+	        log.info("Ucitavanje glavnog menija");
 			List<HashMap<String[],?>> l = new ArrayList<>();
+			HashMap<String[],Integer> tmp_ = new HashMap<>();
+			restriction = "gt;korisnik";
+			int tip = Integer.valueOf(System.getProperty("user.type"))-1;
+			tmp_.put(restriction.split(";"), tip);
+			l.add(tmp);l.add(tmp_);
 			glavniMeni = DbOperation.Instance().getValue(l, Glavni_meni.class);
 			int startCordinatesX = Integer.valueOf(GymProperties.getPropertie("startCordinatesX"));
 			int startCordinatesY= Integer.valueOf(GymProperties.getPropertie("startCordinatesY"));

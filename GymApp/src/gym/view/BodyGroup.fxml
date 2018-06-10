@@ -3,8 +3,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
@@ -21,12 +19,6 @@
             <Button fx:id="b_ponisti" layoutX="171.0" layoutY="405.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" />
             <Label fx:id="opis" layoutX="21.0" layoutY="93.0" prefHeight="25.0" prefWidth="101.0" />
             <TextField fx:id="t_opis" layoutX="162.0" layoutY="93.0" />
-            <TableView fx:id="tv" layoutX="28.0" layoutY="126.0" prefHeight="200.0" prefWidth="200.0">
-              <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
-              </columns>
-            </TableView>
          </children>
       </Pane>
       <Button fx:id="b_novo" layoutX="252.0" layoutY="515.0" mnemonicParsing="false" onAction="#show" prefHeight="36.0" prefWidth="80.0" />

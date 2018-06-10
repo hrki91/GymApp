@@ -59,6 +59,8 @@ public class DbOperation {
 							c.add(Restrictions.eq(tmp[1], entry.getValue()));
 						else if (tmp[0].equals("gt"))
 							c.add(Restrictions.gt(tmp[1], entry.getValue()));
+						else if(tmp[0].equals("le"))
+							c.add(Restrictions.le(tmp[1], entry.getValue()));
 					}
 				}
 			}

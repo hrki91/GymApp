@@ -1,5 +1,8 @@
 package gym.view;
 
+import java.math.BigInteger;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -23,6 +26,7 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
@@ -30,8 +34,8 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
-public class UserController extends DataController{
-	
+public class UserController extends DataController {
+
 	@FXML
 	Label ime = new Label();
 	@FXML
@@ -42,7 +46,7 @@ public class UserController extends DataController{
 	Label tip = new Label();
 	@FXML
 	Label kor_ime = new Label();
-	
+
 	@FXML
 	TextField t_ime = new TextField();
 	@FXML
@@ -53,7 +57,7 @@ public class UserController extends DataController{
 	TextField t_kor_ime = new TextField();
 	@FXML
 	ChoiceBox<Tip_korisnika> t_tip = new ChoiceBox<Tip_korisnika>();
-	@FXML 
+	@FXML
 	TableView<Korisnik> tv = new TableView<Korisnik>();
 	private Korisnik _korisnik;
 
@@ -65,85 +69,90 @@ public class UserController extends DataController{
 		prezime.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "surName"));
 		tip.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "member_type"));
 		kor_ime.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "user"));
+		tv.setRowFactory(row -> new TableRow<Korisnik>() {
+			@Override
+			public void updateItem(Korisnik item, boolean empty) {
+				super.updateItem(item, empty);
+				if (item == null || empty) {
+					setStyle("");
+				} else {
+					// Now 'item' has all the info of the Person in this row
+					if (!item.isAktivan()) {
+						getStyleClass().add("warningRows");
+					}
+				}
+			}
+		});
 		getData();
 		List<HashMap<String[], ?>> l = new ArrayList<>();
 		List<Tip_korisnika> tipoviKorisnika = DbOperation.Instance().getValue(l, Tip_korisnika.class);
 		t_tip.setItems(FXCollections.observableArrayList(tipoviKorisnika));
 	}
-	
+
 	@SuppressWarnings("rawtypes")
 	public void getData() {
 		List<HashMap<String[], ?>> l = new ArrayList<>();
 		List<Korisnik> clanarine = DbOperation.Instance().getValue(l, Korisnik.class);
-	
-		
+
 		TableColumn id = new TableColumn("id");
-        TableColumn ime = new TableColumn("Ime");
-        TableColumn prezime = new TableColumn("Prezime");
-        TableColumn korIme = new TableColumn("Korisničko ime");
-        TableColumn tip = new TableColumn("Tip korisnika");
-        TableColumn aktivna = new TableColumn("Status");
-        
-        tv.getColumns().addAll(id,ime,prezime,korIme,tip,aktivna);
-        id.setCellValueFactory(
-        	    new PropertyValueFactory<Clan,String>("id")
-        	);
-        ime.setCellValueFactory(
-        	    new PropertyValueFactory<Clan,String>("ime")
-        	);
-        prezime.setCellValueFactory(
-        	    new PropertyValueFactory<Clan,String>("prezime")
-        	);
-        korIme.setCellValueFactory(
-        	    new PropertyValueFactory<Clan,String>("kor_ime")
-        	);
-        tip.setCellValueFactory(
-        	    new PropertyValueFactory<Clan,String>("tip_korisnika")
-        	);
-        aktivna.setCellValueFactory(
-        	    new PropertyValueFactory<Clan,String>("aktivan")
-        	);
-        
-        tv.setItems(FXCollections.observableArrayList(clanarine));
+		TableColumn ime = new TableColumn("Ime");
+		TableColumn prezime = new TableColumn("Prezime");
+		TableColumn korIme = new TableColumn("Korisničko ime");
+		TableColumn tip = new TableColumn("Tip korisnika");
+
+		tv.getColumns().addAll(id, ime, prezime, korIme, tip);
+		id.setCellValueFactory(new PropertyValueFactory<Clan, String>("id"));
+		ime.setCellValueFactory(new PropertyValueFactory<Clan, String>("ime"));
+		prezime.setCellValueFactory(new PropertyValueFactory<Clan, String>("prezime"));
+		korIme.setCellValueFactory(new PropertyValueFactory<Clan, String>("kor_ime"));
+		tip.setCellValueFactory(new PropertyValueFactory<Clan, String>("tip_korisnika"));
+
+		tv.setItems(FXCollections.observableArrayList(clanarine));
 	}
-	
+
 	public void onClickListView(MouseEvent click) {
 		_korisnik = tv.getSelectionModel().getSelectedItem();
-		if(click.getClickCount() >= 2) {
+		if (click.getClickCount() >= 2) {
 			show();
 			izmjena();
 		}
 	}
-	
+	public void show() {
+		super.show();
+		update = false;
+		t_ime.clear();
+		t_prezime.clear();
+		t_kor_ime.clear();
+		t_tip.getSelectionModel().select(0);	
+	}
+
 	public void delete() {
-		if(_korisnik != null && tv.getSelectionModel().getSelectedItem() != null)
-			if(! delete(_korisnik.getId(), _korisnik)) {
+		if (_korisnik != null && tv.getSelectionModel().getSelectedItem() != null)
+			if (!delete(_korisnik.getId(), _korisnik)) {
 				showMessageBox(AlertType.ERROR, GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.title"),
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteUser.error") + _korisnik.getKor_ime(), 
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteUser.message"),
-						null);
-				}
-			else
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteUser.error")
+								+ _korisnik.getKor_ime(),
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteUser.message"));
+			} else
 				refreshTable(this, tv);
 		else
-			showMessageBox(AlertType.WARNING,GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.title") ,
-					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "",null);
+			showMessageBox(AlertType.WARNING,
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.title"),
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "");
 	}
-	
-	public void izmjena()
-	{
-		if(_korisnik != null) {
+
+	public void izmjena() {
+		if (_korisnik != null) {
 			this.t_ime.setText(_korisnik.getIme());
 			this.t_prezime.setText(_korisnik.getPrezime());
 			this.t_kor_ime.setText(_korisnik.getKor_ime());
 			this.t_aktivna.setSelected(_korisnik.isAktivan());
 			this.t_tip.getSelectionModel().select(_korisnik.getTip_korisnika());
 			update = true;
+		} else {
+			// TODO PORUKA POGREŠKE
 		}
-		else {
-			//TODO PORUKA POGREŠKE
-		}
-			
+
 	}
 
 	public void insert() {
@@ -154,11 +163,14 @@ public class UserController extends DataController{
 			c.setPrezime(t_prezime.getText());
 			c.setKor_ime(t_kor_ime.getText());
 			c.setAktivan(t_aktivna.isSelected());
-			c.setZaporka("12345");
+			MessageDigest md = MessageDigest.getInstance("MD5");
+			md.reset();
+			md.update(StandardCharsets.UTF_8.encode("12345"));
+			String hashZaporka = String.format("%032x", new BigInteger(1, md.digest()));
+			c.setZaporka(hashZaporka);
 			c.setTip_korisnika(t_tip.getSelectionModel().getSelectedItem());
-			
-		} catch (Exception e) {
-			//TODO log
+
+		} catch (Exception e) {			
 			e.printStackTrace();
 			poruka.setText(GymProperties.getMessage(GymProperties.INFOMESSAGE, "unsuccessfulEntry"));
 			poruka.setTextFill(Color.web(GymProperties.getPropertie("errorColor")));
@@ -166,11 +178,10 @@ public class UserController extends DataController{
 			return;
 		}
 		boolean unos = false;
-		if(update) {
+		if (update) {
 			c.setId(_korisnik.getId());
-			update(c);
-		}
-		else {
+			unos = update(c);
+		} else {
 			unos = DbOperation.Instance().insertValue(c);
 		}
 		if (unos) {
@@ -189,13 +200,14 @@ public class UserController extends DataController{
 		t_tip.getSelectionModel().select(0);
 		refreshTable(this, tv);
 	}
+
 	public void back() {
 		super.back();
 		update = false;
 		t_ime.clear();
 		t_prezime.clear();
 		t_kor_ime.clear();
-		t_tip.getSelectionModel().select(0);		
+		t_tip.getSelectionModel().select(0);
 	}
 
 }

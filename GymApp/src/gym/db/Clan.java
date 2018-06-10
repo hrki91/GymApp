@@ -53,5 +53,17 @@ public class Clan {
 	public void setTrening(Trening trenig) {
 		this.trening = trenig;
 	}
-	
+	@Override
+	public String toString() {
+		return this.ime + " " + this.prezime;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		Clan clan = (Clan) obj;
+		if(clan == null)
+			return false;
+		if(clan.getId() == this.id)
+			return true;
+		return false;
+	}
 }

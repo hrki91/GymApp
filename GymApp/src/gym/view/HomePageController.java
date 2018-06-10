@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.List;
 import org.apache.log4j.Logger;
 
-import gym.GymProperties;
 import gym.db.Clan;
 import gym.db.Clanarina_clana;
 import gym.db.DbOperation;
@@ -26,13 +25,11 @@ public class HomePageController extends Controller{
 	Logger log = Logger.getLogger(HomePageController.class.getName());
 
 	@FXML
-	ListView<String> members = new ListView<String>();;
+	ListView<Clan> members = new ListView<Clan>();
 	@FXML
-	ListView<String> membersTrain = new ListView<String>();
+	ListView<Clan> membersTrain = new ListView<Clan>();
 	@FXML
 	Label l= new Label();
-	@FXML
-	TextField tf = new TextField();
 	
 public HomePageController(){		
 	}
@@ -53,11 +50,11 @@ public HomePageController(){
 	}
 	private void setMembers(){
 		if(membersList != null){
-			ObservableList<String> options =  FXCollections.observableArrayList(membersList);
+			ObservableList<Clan> options =  FXCollections.observableArrayList(membersList);
 			members.setItems(options);
 		}
 		if(membersWhoTrain != null){
-			ObservableList<String> options =  FXCollections.observableArrayList(membersWhoTrain);
+			ObservableList<Clan> options =  FXCollections.observableArrayList(membersWhoTrain);
 			membersTrain.setItems(options);
 		}
 		
@@ -66,8 +63,8 @@ public HomePageController(){
 	 * LIST WHICH CONTAINS ALL MEMBERS.
 	 * METHOD getMembers fill list with data
 	 * */
-	private ArrayList <String> membersList = new ArrayList<String>();
-	private ArrayList <String> membersWhoTrain = new ArrayList<String>();
+	private ArrayList <Clan> membersList = new ArrayList<Clan>();
+	private ArrayList <Clan> membersWhoTrain = new ArrayList<Clan>();
 	private DateFormat df;
 	private java.util.Date curentDay;
 	private java.util.Date curentDayTime;
@@ -90,27 +87,29 @@ public HomePageController(){
 		List<Clanarina_clana> clanarina_clana = DbOperation.Instance().getValue(l, Clanarina_clana.class);
 		if (! clanarina_clana.isEmpty()) {
 			for (Clanarina_clana clan2 : clanarina_clana) {
+				l.clear();
 				tmp.clear();
 				String restriction_ = "gt;dolazak";
 				tmp.put(restriction_.split(";"), new java.sql.Date(((java.util.Date) df.parse(startOfWeek)).getTime()));
 				restriction_="eq;clan.id";
 				HashMap<String[],Integer> clan = new HashMap<>();
-				clan.put(restriction_.split(";"),clan2.getId());
+				clan.put(restriction_.split(";"),clan2.getClan().getId());
 				l.add(tmp);l.add(clan);
 				
 				List<Dolasci> dolasci = DbOperation.Instance().getValue(l, Dolasci.class);
 				boolean danasnjiDolazak = false;
 				for (Dolasci dolasci2 : dolasci) {
-					System.out.println(df.format(dolasci2.getDolazak()));
-					if(df.format(dolasci2.getDolazak()) == df.format(this.curentDay) && dolasci2.getOdlazak() == null)
+					if(df.format(dolasci2.getDolazak()).equals(df.format(this.curentDay)) && dolasci2.getOdlazak() == null)
 						danasnjiDolazak = true;
 				}
 				//if(dolasci.contains(""/*new Dolasci().setDolazak(new java.sql.Date(utilDay.getTime()))*/));
-				if(!danasnjiDolazak && dolasci.size() < clan2.getClan().getClanarina().getBr_treninga_u_tjednu()) {				
-					membersList.add(clan2.getClan().getId()+". "+clan2.getClan().getIme()+" "+clan2.getClan().getPrezime());
+				if(!danasnjiDolazak && dolasci.size() < clan2.getClan().getClanarina().getBr_treninga_u_tjednu()) {
+					if(! membersList.contains(clan2.getClan())) 
+						membersList.add(clan2.getClan());
 				}
 				else if(danasnjiDolazak) {
-					membersWhoTrain.add(clan2.getClan().getId()+". "+clan2.getClan().getIme()+" "+clan2.getClan().getPrezime());
+					if(! membersWhoTrain.contains(clan2.getClan()))
+						membersWhoTrain.add(clan2.getClan());
 				}
 			}
 		}
@@ -142,18 +141,14 @@ public HomePageController(){
 	 * METODA KOJA PREBACUJE CLANOVE IZ LISTE CLANOVA KOJI MOGU TRENIRATI U LISTU CLANOVA KOJI SU TRENIRALI DANAS
 	 * */
 	public void registerMember(MouseEvent click){
-		String member= members.getSelectionModel().getSelectedItem();
+		Clan clan= members.getSelectionModel().getSelectedItem();
 		if(click.getClickCount() >= 2 && this.index == members.getSelectionModel().getSelectedIndex()) {
 			
 			Dolasci d = new Dolasci();
-			
-			Clan clan = new Clan();
-			clan.setId(Integer.valueOf(member.substring(0,Integer.valueOf(GymProperties.getPropertie("id")))));
-			
-			d.setClan(clan);
+				d.setClan(clan);
 			d.setDolazak(new java.sql.Date(curentDayTime.getTime()));
 			DbOperation.Instance().insertValue(d);
-			membersTrain.getItems().add(member);
+			membersTrain.getItems().add(clan);
 			members.getItems().remove(index);
 			this.index=-1;
 		}else			
@@ -167,7 +162,7 @@ public HomePageController(){
 //			}
 //			
 //		}
-//		else{//AKO SE PRITISNE RAZLIÈITI ITEM U LISTVIEWU
+//		else{//AKO SE PRITISNE RAZLIï¿½ITI ITEM U LISTVIEWU
 //			this.index=index;
 //		}
 //		new Thread(new TimeOut(500,this,index)).start();
@@ -192,13 +187,13 @@ public HomePageController(){
 	 * METHOD THAT CALLED WHEN USER SET MOUSE ON MEMBERSTRAIN LISTBOX
 	 * */
 	public void membersTrainFocus(){
-		setFocus(membersTrain);
+		//setFocus(membersTrain);
 	}
 	public void membersFocus(){
 		setFocus(members);
 	}
 	
-	private void setFocus(ListView<String> lw){
+	private void setFocus(ListView<Clan> lw){
 		if(!lw.isFocused()){
 			lw.requestFocus();
 		}

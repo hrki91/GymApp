@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.util.Callback;
@@ -39,6 +40,7 @@ public class BodyGroupController extends DataController{
 		naziv.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "title"));
 		opis.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "description"));
 		dataPane.setVisible(false);
+		
 		getData();
 	}
 
@@ -71,9 +73,16 @@ public class BodyGroupController extends DataController{
 	}
 	public void onClickListView(MouseEvent click) {
 		if(click.getClickCount() >= 2) {
-			izmjena();
 			show();
+			izmjena();
+			
 		}
+	}
+	public void show() {
+		super.show();
+		update = false;
+		t_naziv.clear();
+		t_opis.clear();
 	}
 	
 	public void izmjena()
@@ -117,5 +126,23 @@ public class BodyGroupController extends DataController{
 		t_naziv.clear();
 		t_opis.clear();
 
+	}
+	public void delete() {
+		if (sk != null && contentTable.getSelectionModel().getSelectedItem() != null) {
+			if (!delete(sk.getId(), sk)) {
+				showMessageBox(AlertType.ERROR, GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.title"),
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMemberShip.error")
+								+ sk.getNaziv(),
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMemberShip.message"));
+			} else {
+				t_naziv.clear();
+				t_opis.clear();
+				contentTable.getItems().clear();
+				getData();
+			}
+		} else
+			showMessageBox(AlertType.WARNING,
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.title"),
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "");
 	}
 }

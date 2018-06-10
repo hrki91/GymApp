@@ -10,7 +10,6 @@ import com.mysql.fabric.xmlrpc.base.Data;
 import gym.GymProperties;
 import gym.db.Clan;
 import gym.db.Clanarina;
-import gym.db.DataObject;
 import gym.db.DbOperation;
 import gym.db.Tip_treninga;
 import gym.db.Trening;
@@ -49,10 +48,12 @@ public class TreningController extends DataController {
 	@Override
 	public void initController() {
 		super.initController();
-		naziv.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "name"));
+		naziv.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "title"));
 		tezina.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "level"));
-		tip.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "member_type"));
-
+		tip.setText(GymProperties.getMessage(GymProperties.LBLMESSAGE, "trening"));
+		List<Tip_treninga> tipoviTreninga = (List<Tip_treninga>) getAllData(Tip_treninga.class);
+		t_tip.setItems(FXCollections.observableArrayList(tipoviTreninga));
+		t_tezina.setItems(FXCollections.observableArrayList(1, 2, 3, 4, 5));
 		getData();
 	}
 
@@ -61,13 +62,12 @@ public class TreningController extends DataController {
 			if (!delete(_trenig.getId(), _trenig)) {
 				showMessageBox(AlertType.ERROR, GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.title"),
 						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteTrenig.error") + _trenig.getNaziv(), 
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteTrenig.message"),
-						null);
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteTrenig.message"));
 			} else
 				refreshTable(this, tv);
 		else
 			showMessageBox(AlertType.WARNING,GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.title") ,
-					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "",null);
+					GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.noValue.error"), "");
 	}
 
 	public void getData() {
@@ -80,10 +80,10 @@ public class TreningController extends DataController {
 		TableColumn tezina = new TableColumn("Tezina");
 
 		tv.getColumns().addAll(id, naziv, tip, tezina);
-		id.setCellValueFactory(new PropertyValueFactory<Clan, String>("id"));
-		naziv.setCellValueFactory(new PropertyValueFactory<Clan, String>("naziv"));
-		tip.setCellValueFactory(new PropertyValueFactory<Clan, String>("tip_treninga"));
-		tezina.setCellValueFactory(new PropertyValueFactory<Clan, String>("tezina"));
+		id.setCellValueFactory(new PropertyValueFactory<Trening, String>("id"));
+		naziv.setCellValueFactory(new PropertyValueFactory<Trening, String>("naziv"));
+		tip.setCellValueFactory(new PropertyValueFactory<Trening, String>("tip_treninga"));
+		tezina.setCellValueFactory(new PropertyValueFactory<Trening, String>("tezina"));
 
 		tv.setItems(FXCollections.observableArrayList(clanarine));
 
@@ -96,6 +96,7 @@ public class TreningController extends DataController {
 			izmjena();
 		}
 	}
+	
 
 	public void izmjena() {
 		if (_trenig != null) {
@@ -111,9 +112,9 @@ public class TreningController extends DataController {
 
 	public void show() {
 		super.show();
-		List<Tip_treninga> tipoviTreninga = (List<Tip_treninga>) getAllData(Tip_treninga.class);
-		t_tip.setItems(FXCollections.observableArrayList(tipoviTreninga));
-		t_tezina.setItems(FXCollections.observableArrayList(1, 2, 3, 4, 5));
+		update = false;
+		t_naziv.clear();
+		t_tip.getSelectionModel().select(0);
 	}
 
 	public void insert() {

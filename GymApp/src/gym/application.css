@@ -1,1 +1,14 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.warningRows{
+	-fx-background-color: tomato;
+}
+.membershipExpired{
+	-fx-background-color: rgb(69,69,69);
+	-fx-highlight-text-fill: rgb(255,255,255);
+}
+.membershipNearEnd{
+	-fx-background-color: rgb(183,183,183);
+}
+.membershipNearlyExpired{
+	-fx-background-color: rgb(204,49,49);
+}

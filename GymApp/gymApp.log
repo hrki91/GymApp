@@ -6983,3 +6983,215 @@ Caused by: java.lang.NullPointerException
 10-06-2018 04:07:55 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
 10-06-2018 04:08:02 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
 10-06-2018 04:08:06 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:19 INFO  Main:56 - Pocetak rada
+10-06-2018 04:17:19 INFO  GymProperties:24 - Loading properties
+10-06-2018 04:17:19 INFO  GymProperties:31 - Properties loaded
+10-06-2018 04:17:19 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+10-06-2018 04:17:19 INFO  Environment:213 - HHH000206: hibernate.properties not found
+10-06-2018 04:17:42 INFO  Main:56 - Pocetak rada
+10-06-2018 04:17:42 INFO  GymProperties:24 - Loading properties
+10-06-2018 04:17:42 INFO  GymProperties:31 - Properties loaded
+10-06-2018 04:17:42 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+10-06-2018 04:17:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+10-06-2018 04:17:42 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+10-06-2018 04:17:43 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:44 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:45 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:45 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+10-06-2018 04:17:45 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+10-06-2018 04:17:45 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+10-06-2018 04:17:45 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+10-06-2018 04:17:45 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+10-06-2018 04:17:45 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+10-06-2018 04:17:45 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+10-06-2018 04:17:46 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10-06-2018 04:17:47 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@120f38e6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+10-06-2018 04:17:52 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:53 INFO  MainMenuController:37 - Ucitavanje glavnog menija
+10-06-2018 04:17:53 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:53 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:53 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:53 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:53 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:56 INFO  MainMenuController:72 - Otvaram formuČlanovi
+10-06-2018 04:17:56 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:57 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:17:58 INFO  MainMenuController:72 - Otvaram formuČlanarina
+10-06-2018 04:17:59 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:18:00 INFO  MainMenuController:72 - Otvaram formuTip treniga
+10-06-2018 04:18:00 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:18:01 INFO  MainMenuController:72 - Otvaram formuTrenig
+10-06-2018 04:18:01 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:18:01 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:18:02 INFO  MainMenuController:72 - Otvaram formuKorisnici
+10-06-2018 04:18:02 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:18:02 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+10-06-2018 04:18:04 INFO  MainMenuController:77 - Closing MainMenu Form
+10-06-2018 04:18:05 INFO  LoginController:118 - Ga�enje aplikacije
+10-06-2018 04:24:33 INFO  MainMenuController:77 - Closing MainMenu Form
+10-06-2018 04:24:34 INFO  LoginController:118 - Ga�enje aplikacije
+11-06-2018 13:29:09 INFO  Main:56 - Pocetak rada
+11-06-2018 13:29:09 INFO  GymProperties:24 - Loading properties
+11-06-2018 13:29:09 INFO  GymProperties:31 - Properties loaded
+11-06-2018 13:29:10 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+11-06-2018 13:29:10 INFO  Environment:213 - HHH000206: hibernate.properties not found
+11-06-2018 13:29:10 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+11-06-2018 13:29:12 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:19 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:29:20 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+11-06-2018 13:29:20 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+11-06-2018 13:29:20 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+11-06-2018 13:29:20 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+11-06-2018 13:29:20 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+11-06-2018 13:29:20 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+11-06-2018 13:29:21 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+11-06-2018 13:29:26 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@46349b95] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+11-06-2018 13:29:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:29:42 INFO  MainMenuController:37 - Ucitavanje glavnog menija
+11-06-2018 13:29:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:29:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:29:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:03 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:03 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:16 INFO  MainMenuController:72 - Otvaram formuČlanovi
+11-06-2018 13:30:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:17 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:18 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:18 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:18 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:23 INFO  MainMenuController:72 - Otvaram formuKorisnici
+11-06-2018 13:30:23 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:23 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:25 INFO  MainMenuController:72 - Otvaram formuČlanarina
+11-06-2018 13:30:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:30:40 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:37:07 INFO  Main:56 - Pocetak rada
+11-06-2018 13:37:07 INFO  GymProperties:24 - Loading properties
+11-06-2018 13:37:07 INFO  GymProperties:31 - Properties loaded
+11-06-2018 13:37:07 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+11-06-2018 13:37:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+11-06-2018 13:37:08 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+11-06-2018 13:37:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:11 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+11-06-2018 13:37:12 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+11-06-2018 13:37:12 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+11-06-2018 13:37:12 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+11-06-2018 13:37:12 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+11-06-2018 13:37:12 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+11-06-2018 13:37:12 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+11-06-2018 13:37:13 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+11-06-2018 13:37:15 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@176996c3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+11-06-2018 13:37:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:37:25 INFO  MainMenuController:37 - Ucitavanje glavnog menija
+11-06-2018 13:37:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:37:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:37:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:37:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:37:25 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:37:28 INFO  MainMenuController:72 - Otvaram formuČlanarina
+11-06-2018 13:37:28 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+11-06-2018 13:39:12 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:05 INFO  Main:56 - Pocetak rada
+12-06-2018 10:10:05 INFO  GymProperties:24 - Loading properties
+12-06-2018 10:10:05 INFO  GymProperties:31 - Properties loaded
+12-06-2018 10:10:06 INFO  Version:45 - HHH000412: Hibernate Core {5.2.15.Final}
+12-06-2018 10:10:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+12-06-2018 10:10:06 WARN  deprecation:91 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+12-06-2018 10:10:06 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:08 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  deprecation:75 - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+12-06-2018 10:10:09 WARN  ConnectionProviderInitiator:219 - HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
+12-06-2018 10:10:09 WARN  pooling:73 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+12-06-2018 10:10:09 INFO  pooling:129 - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/gym?useSSL=false]
+12-06-2018 10:10:09 INFO  pooling:138 - HHH10001001: Connection properties: {user=hrki, password=****}
+12-06-2018 10:10:09 INFO  pooling:143 - HHH10001003: Autocommit mode: false
+12-06-2018 10:10:09 INFO  DriverManagerConnectionProviderImpl:281 - HHH000115: Hibernate connection pool size: 20 (min=1)
+12-06-2018 10:10:10 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+12-06-2018 10:10:12 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1859e2a4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+12-06-2018 10:10:37 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 INFO  MainMenuController:37 - Ucitavanje glavnog menija
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:38 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:41 INFO  MainMenuController:72 - Otvaram formuČlanovi
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:42 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:49 INFO  MainMenuController:72 - Otvaram formuČlanarina
+12-06-2018 10:10:49 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 INFO  MainMenuController:72 - Otvaram formuČlanovi
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:10:58 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:03 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 INFO  MainMenuController:72 - Otvaram formuČlanovi
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
+12-06-2018 10:11:07 WARN  deprecation:1812 - HHH90000022: Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead

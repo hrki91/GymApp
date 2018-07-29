@@ -164,8 +164,8 @@ public class MembersController extends DataController {
 		if (cl != null && tv.getSelectionModel().getSelectedItem() != null)
 			if (!delete(cl.getId(), cl)) {
 				showMessageBox(AlertType.ERROR, GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelete.title"),
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelteMember.error") + cl.getIme(),
-						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDelteMember.message"));
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMember.error") + cl.getIme(),
+						GymProperties.getMessage(GymProperties.ERRMESSAGE, "onDeleteMember.message"));
 			} else
 				refreshTable(this, tv);
 		else
@@ -205,7 +205,8 @@ public class MembersController extends DataController {
 	public void onClickListView(MouseEvent click) {
 		this.cl = tv.getSelectionModel().getSelectedItem();
 		if (click.getClickCount() >= 2) {
-			show();izmjena();
+			show();
+			izmjena();
 		}
 	}
 	public void show() {
@@ -234,10 +235,7 @@ public class MembersController extends DataController {
 
 	public void insert() {
 		Clan c = null;
-		if (cl != null)
-			c = cl;
-		else
-			c = new Clan();
+		c = new Clan();
 		try {
 			c.setAdresa(t_adresa.getText());
 			c.setClanarina(t_clanarina.getSelectionModel().getSelectedItem());
@@ -341,6 +339,7 @@ public class MembersController extends DataController {
 				poruka.setTextFill(Color.web(GymProperties.getPropertie("infoColor")));
 				poruka.setVisible(true);
 			}
+		refreshTable(this, tv);
 		}
 	}
 
@@ -351,8 +350,10 @@ public class MembersController extends DataController {
 		alert.showAndWait().ifPresent(rs -> {
 			if (rs == ButtonType.OK) {
 				produzivanjeClanarine(cl, true, startDate);
+				refreshTable(this, tv);
 			}
 			if (rs == ButtonType.CANCEL) {
+				
 				// VRATI SE NAZAD
 			}
 		});

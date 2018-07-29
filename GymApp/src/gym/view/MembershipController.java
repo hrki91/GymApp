@@ -135,7 +135,7 @@ public class MembershipController extends DataController {
 			this.t_br_treninga.setText(String.valueOf(_clanarina.getBr_treninga_u_tjednu()));
 			this.t_cijena.setText(String.valueOf(_clanarina.getCijena()));
 			this.t_trajanje.setText(String.valueOf(_clanarina.getTrajanje_u_danima()));
-			update = false;
+			update = true;
 		} else {
 			// TODO PORUKA POGREŠKE
 		}

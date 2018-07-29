@@ -149,6 +149,9 @@ public class TreningController extends DataController {
 		}
 
 		t_naziv.clear();
+		update = false;
+		t_tezina.getSelectionModel().clearSelection();
+		t_tip.getSelectionModel().clearSelection();
 		refreshTable(this, tv);
 	}
 
